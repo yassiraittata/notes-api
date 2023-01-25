@@ -1,0 +1,26 @@
+### Create a note
+POST http://localhost:3000/notes/new 
+Content-Type: application/json
+
+{
+   "title": "my second note",
+   "description": "this is my second note"
+}
+
+### Get a single note
+GET http://localhost:3000/notes/1
+
+### Get all notes
+GET http://localhost:3000/notes/all
+
+### update a note
+PATCH http://localhost:3000/notes/3
+Content-Type: application/json
+
+{
+   "title": "my third note 3",
+   "description": "this is my third note"
+}
+
+### Delete a note
+DELETE  http://localhost:3000/notes/2
